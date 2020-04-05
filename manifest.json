@@ -1,0 +1,22 @@
+{
+    "name": "Youtube Sound Extension",
+    "version": "0.8.4",
+    "description": "Implements altering of youtube sound levels with mousewheel on hover.",
+    "permissions": ["storage", "activeTab"],
+    "content_scripts": [
+        {
+          "matches": ["*://www.youtube.com/*","*://youtube.com/*"],
+          "css": ["core.css"],
+          "js": ["init.js"],
+          "run_at": "document_end",
+          "all_frames": true
+        }     
+      ],
+      "icons": { 
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128":"icons/icon128.png" },
+    "manifest_version": 2,
+    "web_accessible_resources": [ "resources/*" ]
+
+}

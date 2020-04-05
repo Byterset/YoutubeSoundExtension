@@ -1,0 +1,12 @@
+.yt_se_volumeIndicator {
+    margin: 25px;
+    
+    color: yellow;
+    position: absolute;
+    z-index: 100;
+    font-size: xx-large;
+  }
+
+.yt_se_nonDisplaying{
+  display: none;
+}
